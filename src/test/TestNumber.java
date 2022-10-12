@@ -35,11 +35,11 @@ class TestNumber {
 		assertEquals("Buzz", result);
 		}
 	
-	@DisplayName("TC03 - Number = Integer 1-100 Buzz")
+	@DisplayName("TC03 - Number = Integer 1-100 FizzBuzz")
 	@ParameterizedTest
-	@ValueSource(ints = {5,10,20,25,35,40,50,55,65,70,80,85,95,100})
+	@ValueSource(ints = {15,30,45,60,75,90})
 	void testTC03(int input) {
 		String result = multi.check(input);
-		assertEquals("Buzz", result);
+		assertEquals("FizzBuzz", result);
 		}
 }
