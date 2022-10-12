@@ -1,11 +1,10 @@
 package main;
 
 public class Multinumber {
-	  String num;
-		public int check(String num){
-		  	if(num == "1"){
-		  		return 1;
+		public String check(int num){
+		  	if(num %3 == 0){
+		  		return "Fizz";
 		    }
-		    return 0;
+		    return "0";
 			}
 	}
